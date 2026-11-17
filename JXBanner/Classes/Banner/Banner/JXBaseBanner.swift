@@ -93,7 +93,9 @@ public class JXBaseBanner: UIView {
             UICollectionView(frame: self.bounds,
                              collectionViewLayout: self.layout)
         collectionView.backgroundColor = UIColor.clear
+        #if !os(tvOS)
         collectionView.isPagingEnabled = false
+        #endif
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.autoresizingMask = [

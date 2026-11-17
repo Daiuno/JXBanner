@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "JXBanner",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v8),
+        .tvOS(.v15)
     ],
     products: [
         .library(
@@ -13,10 +14,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/Daiuno/JXPageControl.git",
-            branch: "master"
-        )
+        .package(path: "../JXPageControl")
     ],
     targets: [
         .target(
