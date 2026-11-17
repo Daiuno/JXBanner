@@ -14,7 +14,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(path: "../JXPageControl")
+        .package(
+            url: "https://github.com/Daiuno/JXPageControl.git",
+            branch: "master"
+        )
     ],
     targets: [
         .target(
